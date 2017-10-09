@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace DemoAuthentication.Controllers
 {
+    [Authorize(Roles ="admin")]
     public class HomeController : Controller
     {
         public ActionResult Index()
