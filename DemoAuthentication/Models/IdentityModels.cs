@@ -21,7 +21,7 @@ namespace DemoAuthentication.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("StoreConnection", throwIfV1Schema: false)
         {
         }
 
